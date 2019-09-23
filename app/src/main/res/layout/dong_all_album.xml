@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+
+    android:layout_margin="5dp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:id="@+id/framelayout">
+        <ImageView
+            android:id="@+id/imageviewallalbum"
+            android:src="@drawable/ic_launcher_background"
+            android:scaleType="centerCrop"
+            android:layout_width="180dp"
+            android:layout_height="180dp"/>
+    </FrameLayout>
+    <TextView
+        android:textColor="#060606"
+        android:textSize="15sp"
+        android:text="Nhac hot trong nam"
+        android:gravity="left"
+        android:maxWidth="200dp"
+        android:lines="2"
+        android:maxLines="2"
+        android:ellipsize="end"
+        android:id="@+id/textviewtenallalbum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:id="@id/textviewtencasialbum"
+        android:text="Various Artists"
+        android:textSize="13sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+</LinearLayout>

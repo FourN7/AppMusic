@@ -4,7 +4,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:scrollbars="none"
-    android:fillViewport="true">
+    android:fillViewport="true"
+    android:background="#A1B8E9">
     <LinearLayout
         android:id="@+id/linearlayout"
         android:orientation="vertical"
@@ -14,8 +15,31 @@
             android:name="com.example.appmusic.Fragment.Fragment_Banner"
             android:id="@+id/fragmentbanner"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            tools:layout="@layout/fragment_banner" />
+            android:layout_height="wrap_content" />
+        <fragment
+            android:name="com.example.appmusic.Fragment.Fragment_Playlist"
+            android:id="@+id/fragmentplaylist"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <fragment
+            android:name="com.example.appmusic.Fragment.Fragment_ChuDe_TheLoai_ToDay"
+            android:id="@+id/fragmentchudetheloai"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <fragment
+            android:name="com.example.appmusic.Fragment.Fragment_Album"
+            android:id="@+id/fragmentalbum"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <fragment
+            android:name="com.example.appmusic.Fragment.Fragment_Bai_Hat_Hot"
+            android:id="@+id/fragmentbaihathot"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+
+
     </LinearLayout>
+
 
 </ScrollView>
