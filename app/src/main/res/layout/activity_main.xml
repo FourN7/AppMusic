@@ -19,9 +19,9 @@
         app:tabSelectedTextColor="#EE0810"
         app:tabTextColor="#0B2DE9"
         app:tabIndicatorHeight="2dp"
-        android:background="@android:color/transparent"
+        android:background="@drawable/custom_background_play_nhac"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="50dp">
 
     </com.google.android.material.tabs.TabLayout>
 

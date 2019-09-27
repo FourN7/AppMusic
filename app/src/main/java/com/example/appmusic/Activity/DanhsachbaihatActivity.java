@@ -10,7 +10,6 @@ import android.os.Bundle;
 import android.os.StrictMode;
 import android.view.View;
 import android.widget.ImageView;
-import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
@@ -68,7 +67,7 @@ public class DanhsachbaihatActivity extends AppCompatActivity {
             setValueInView(quangcao.getTenBaiHat(),quangcao.getHinhBaiHat());
             GetDataQuangcao(quangcao.getIdQuangCao());
         }
-        if(playlist !=null && !playlist.getTen().equals("")){
+        if(playlist != null && !playlist.getTen().equals("")){
            setValueInView(playlist.getTen(),playlist.getHinhPlaylist());
            GetDataPlaylist(playlist.getIdPlayList());
         }
@@ -207,7 +206,7 @@ public class DanhsachbaihatActivity extends AppCompatActivity {
         if(intent != null){
             if(intent.hasExtra("banner")){
                 quangcao= (Quangcao) intent.getSerializableExtra("banner");
-                Toast.makeText(this,quangcao.getTenBaiHat(),Toast.LENGTH_SHORT).show();
+
             }
             if(intent.hasExtra("playlist")){
                 playlist=(Playlist) intent.getSerializableExtra("playlist");

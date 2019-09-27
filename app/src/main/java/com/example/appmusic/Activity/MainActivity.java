@@ -27,10 +27,12 @@ public class MainActivity extends AppCompatActivity {
         MainViewPagerAdapter mainViewPagerAdapter=new MainViewPagerAdapter(getSupportFragmentManager());
         mainViewPagerAdapter.addFragment(new Fragment_Trang_Chu(),"Trang Chủ");
         mainViewPagerAdapter.addFragment(new Fragment_Tim_Kiem(),"Tìm Kiếm");
+       // mainViewPagerAdapter.addFragment(new Fragment_All_Playlist(),"All Playlist");
         viewPager.setAdapter(mainViewPagerAdapter);
         tabLayout.setupWithViewPager(viewPager);
         tabLayout.getTabAt(0).setIcon(R.drawable.icontrangchu);
         tabLayout.getTabAt(1).setIcon(R.drawable.icontimkiem);
+       // tabLayout.getTabAt(2).setIcon(R.drawable.iconmoreplaylist);
     }
 
     private void anhxa() {

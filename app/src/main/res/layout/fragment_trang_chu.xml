@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     android:scrollbars="none"
     android:fillViewport="true"
-    android:background="#A1B8E9">
+    android:background="@drawable/custom_backgroud_trangchu">
     <LinearLayout
         android:id="@+id/linearlayout"
         android:orientation="vertical"

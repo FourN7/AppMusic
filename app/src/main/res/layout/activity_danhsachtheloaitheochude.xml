@@ -5,18 +5,18 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".Activity.DanhsachallAlbumActivity"
+    tools:context=".Activity.DanhsachtheloaitheochudeActivity"
     android:background="@drawable/custom_backgroud_trangchu">
-        <androidx.appcompat.widget.Toolbar
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbartheloaitheochude"
         android:layout_width="match_parent"
-        android:layout_height="?attr/actionBarSize"
-        android:id="@+id/toolbarallalbum">
+        android:layout_height="?attr/actionBarSize">
 
-        </androidx.appcompat.widget.Toolbar>
-        <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/recyclerviewAllAlbum"
+    </androidx.appcompat.widget.Toolbar>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerviewtheloaitheochude"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        </androidx.recyclerview.widget.RecyclerView>
+    </androidx.recyclerview.widget.RecyclerView>
 </LinearLayout>

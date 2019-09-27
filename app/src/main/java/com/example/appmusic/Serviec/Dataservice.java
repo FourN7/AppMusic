@@ -5,6 +5,7 @@ import com.example.appmusic.Model.Baihat;
 import com.example.appmusic.Model.ChuDe;
 import com.example.appmusic.Model.Playlist;
 import com.example.appmusic.Model.Quangcao;
+import com.example.appmusic.Model.TheLoai;
 import com.example.appmusic.Model.Theloaitrongngay;
 
 import java.util.List;
@@ -21,6 +22,9 @@ public interface Dataservice {
 
     @GET("playlistforcurrentday.php")
     Call<List<Playlist>> GetPlaylistCurrentDay();
+
+    @GET("allplaylist.php")
+    Call<List<Playlist>>GetAllPlaylist();
 
     @GET("chudevatheloaitrongngay.php")
     Call<Theloaitrongngay>GetCategoryMusic();
@@ -60,4 +64,13 @@ public interface Dataservice {
     @FormUrlEncoded
     @POST("updateluotthich.php")
     Call<String>UpdateLuotThich(@Field("luotthich") String luotthich,@Field("idbaihat") String idbaihat);
+
+    @FormUrlEncoded
+    @POST("searchbaihat.php")
+    Call<List<Baihat>>GetSearchBaiHat(@Field("tukhoa") String tukhoa);
+
+    @FormUrlEncoded
+    @POST("theloaichude.php")
+    Call<List<TheLoai>>GetTheloaitheochude(@Field("idchude") String idchude);
+
 }

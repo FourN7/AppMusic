@@ -6,7 +6,8 @@
     android:layout_height="match_parent"
     android:fitsSystemWindows="true"
     android:id="@+id/coordinatorlayout"
-    tools:context=".Activity.DanhsachbaihatActivity">
+    tools:context=".Activity.DanhsachbaihatActivity"
+    android:background="@drawable/custom_backgroud_trangchu">
 
     <com.google.android.material.appbar.AppBarLayout
         android:fitsSystemWindows="true"
@@ -48,7 +49,7 @@
         </com.google.android.material.appbar.CollapsingToolbarLayout>
     </com.google.android.material.appbar.AppBarLayout>
     <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:backgroundTint="#a845de"
+        android:backgroundTint="#122DC2"
         android:src="@drawable/iconfloatingactionbutton"
         android:scaleType="fitXY"
         app:fabSize="normal"

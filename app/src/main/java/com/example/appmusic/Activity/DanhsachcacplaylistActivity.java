@@ -29,7 +29,6 @@ public class DanhsachcacplaylistActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_danhsachcacplaylist);
-        anhxa();
         init();
         GetData();
 
@@ -55,6 +54,8 @@ public class DanhsachcacplaylistActivity extends AppCompatActivity {
     }
 
     private void init() {
+        toolbar=findViewById(R.id.toolbardanhsachcacplaylist);
+        recyclerViewdanhsachcacplaylist=findViewById(R.id.recyclerviewdanhsachcacplaylist);
         setSupportActionBar(toolbar);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         getSupportActionBar().setTitle("Play Lists");
@@ -67,9 +68,4 @@ public class DanhsachcacplaylistActivity extends AppCompatActivity {
         });
     }
 
-    private void anhxa() {
-        toolbar=findViewById(R.id.toolbardanhsachcacplaylist);
-        recyclerViewdanhsachcacplaylist=findViewById(R.id.recyclerviewdanhsachcacplaylist);
-
-    }
 }

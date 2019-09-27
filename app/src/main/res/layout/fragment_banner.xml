@@ -6,7 +6,6 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
         <androidx.viewpager.widget.ViewPager
-            android:background="#f20"
             android:id="@+id/mViewPager"
             android:layout_width="match_parent"
             android:layout_height="180dp"></androidx.viewpager.widget.ViewPager>

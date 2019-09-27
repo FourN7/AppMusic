@@ -17,6 +17,7 @@ import androidx.fragment.app.Fragment;
 
 import com.example.appmusic.Activity.DanhsachbaihatActivity;
 import com.example.appmusic.Activity.DanhsachtatcachudeActivity;
+import com.example.appmusic.Activity.DanhsachtheloaitheochudeActivity;
 import com.example.appmusic.Model.ChuDe;
 import com.example.appmusic.Model.TheLoai;
 import com.example.appmusic.Model.Theloaitrongngay;
@@ -74,7 +75,7 @@ public class Fragment_ChuDe_TheLoai_ToDay extends Fragment {
                LinearLayout linearLayout=new LinearLayout(getActivity());
                linearLayout.setOrientation(LinearLayout.HORIZONTAL);
 
-               LinearLayout.LayoutParams layout=new LinearLayout.LayoutParams(850,400);
+               LinearLayout.LayoutParams layout=new LinearLayout.LayoutParams(1000,350);
                layout.setMargins(10,20,10,30);
 
                for (int i=0;i<(chuDeArrayList.size());i++){
@@ -88,6 +89,15 @@ public class Fragment_ChuDe_TheLoai_ToDay extends Fragment {
                     cardView.setLayoutParams(layout);
                     cardView.addView(imageView);
                     linearLayout.addView(cardView);
+                   final int finalI = i;
+                   imageView.setOnClickListener(new View.OnClickListener() {
+                        @Override
+                        public void onClick(View v) {
+                            Intent intent=new Intent(getActivity(), DanhsachtheloaitheochudeActivity.class);
+                            intent.putExtra("chude",chuDeArrayList.get(finalI));
+                            startActivity(intent);
+                        }
+                    });
 
                }
               for (int j=0 ; j<(theLoaiArrayList.size());j++){
