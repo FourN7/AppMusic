@@ -6,17 +6,17 @@
     android:background="@drawable/custom_backgroud_trangchu"
     >
     <TextView
-        android:textColor="#D54D22"
+        android:textColor="#3193E0"
         android:textSize="30sp"
         android:gravity="center"
         android:layout_marginTop="15dp"
         android:layout_marginBottom="15dp"
         android:id="@+id/textviewtitleplaylist"
-        android:text="PANDA MUSIC"
+        android:text="ZING MP3 CỦA TUI"
         android:textStyle="bold"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="#6F647AEC"/>
+        android:background="#7D0F91"/>
     <ListView
         android:layout_below="@+id/textviewtitleplaylist"
         android:id="@+id/listviewplaylist"
